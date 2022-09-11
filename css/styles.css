@@ -1,0 +1,158 @@
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #8BACD9 !important;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #00FFF8 !important;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: 'Outfit', sans-serif;
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #0D192C;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #dee2e6;
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-radius: 0.375rem;
+    --bs-border-radius-sm: 0.25rem;
+    --bs-border-radius-lg: 0.5rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-2xl: 2rem;
+    --bs-border-radius-pill: 50rem;
+    --bs-link-color: #0d6efd;
+    --bs-link-hover-color: #0a58ca;
+    --bs-code-color: #d63384;
+    --bs-highlight-bg: #fff3cd;
+    /* Custom */
+    --bg-card-body: #15263F;
+    --card-text-color: #8BACD9;
+	--fs-7: 0.875rem;
+}
+
+/*font-family: 'Outfit', sans-serif;*/
+
+body {
+    background-color: var(--bs-body-bg);
+	font-family: var(--bs-font-sans-serif) !important;
+    font-size: 18px;
+}
+/* card */
+.bg-card-body {
+    background-color: var(--bg-card-body);	
+}
+.card-text {
+    color: var(--card-text-color);
+}
+.text-primary {
+	color: var(--bs-primary) !important;
+}
+.text-info {
+	color: var(--bs-info) !important;
+}
+.fs-7 {
+	font-size: var(--fs-7);
+}
+
+/* overlay */
+.card-image {
+	overflow: hidden;
+}
+.card-image img{
+    width: 100%;
+    display: block;
+}
+.img-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+}
+.img-overlay img{
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.card-image:hover .img-overlay{
+    display: block;
+}
+
+.eth::before {
+	content: url('../images/icon-ethereum.svg');
+	position: relative;
+	top: 3px;
+	margin-right: 7px;
+	display: inline-block;
+}
+.days-left::before {
+	content: url('../images/icon-clock.svg');
+	position: relative;
+	top: 3px;
+	margin-right: 7px;
+	display: inline-block;
+}
+
+/* links */
+.link-light:focus, .link-light:hover {
+	color: var(--bs-info) !important;
+}
+.link-muted {
+	--bs-text-opacity: 1;
+	color: #6c757d !important;
+}
+.link-muted:hover {
+	color: var(--bs-primary) !important;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
